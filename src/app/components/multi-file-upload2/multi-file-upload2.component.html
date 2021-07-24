@@ -1,0 +1,43 @@
+<div class="file-input-container">
+  <label style="background-color: orange;color:white;font-size:larger;font-weight:bolder;">
+    <input type="file"  ng2FileSelect [uploader]="uploader" multiple accept="application/pdf" />
+    Add Files
+  </label>
+
+ 
+
+</div>
+<div style="color:white;font-weight:bolder;text-align: center;font-size:x-large;background:rgba(143, 188, 143, 0.596)" ng2FileDrop [ngClass]="{'nv-file-over': hasBaseDropZoneOver}" (fileOver)="fileOverBase($event)" [uploader]="uploader" class="drop-zone">
+  <!-- <ion-list style="color:white;font-weight:bolder;font-size:x-large;--background:rgba(143, 188, 143, 0.027);"> -->
+    <!-- <ion-item style="color:white;font-weight:bolder;font-size:x-large;--background:rgba(143, 188, 143, 0.027);"> -->
+      <!-- <h4 style="color:white;white-space: pre-wrap;font-weight:bolder;font-size:x-large;--background:rgba(143, 188, 143, 0.027);">Drop files here and start sharing!</h4> -->
+      <ion-item lines="none" style="border-bottom:none !important;text-align:center !important;align-items:center;color:white;white-space: pre-wrap;font-weight:bolder;font-size:x-large;--background:rgba(143, 188, 143, 0.027);">
+        <ion-label position="stacked" style="text-align:center !important;margin-bottom: 3%;color:white;white-space: pre-wrap;font-weight:bolder;font-size:x-large;--background:rgba(143, 188, 143, 0.027);">Drop files here and start sharing!</ion-label>
+        <ion-img style="width:10%;" src="../../assets/download_black_18dp.svg"></ion-img>
+      </ion-item>
+    <!-- <ion-item style="color:white;font-weight:bolder;font-size:x-large;--background:rgba(143, 188, 143, 0.027);"> -->
+      <!-- <h2 style="color:white;font-weight:bolder;font-size:x-large;--background:rgba(26, 116, 26, 0.027);"><ion-img style="width:100%;" src="../../assets/download_black_18dp.svg"></ion-img></h2> -->
+  
+    
+  <!-- </ion-list> -->
+ 
+
+</div>
+
+
+<!-- <h2 style="text-align: left;">Files: {{ uploader?.queue?.length }}</h2>
+
+
+<ion-list>
+    <ion-item *ngFor="let item of uploader.queue;let i =index">
+     
+      <ion-label>
+        {{ item?.file?.name }}
+      </ion-label>
+      <ion-button (click)="delete(i)" color="danger"><ion-icon style="color:white" name="trash"></ion-icon></ion-button>
+
+
+     
+      
+    </ion-item>
+</ion-list> -->

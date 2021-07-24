@@ -1,0 +1,17 @@
+#scroll-list{
+    height: 50%;;
+    }
+    div[scrollx=true],div[scrolly=true] {
+        position: relative;
+        overflow: hidden;
+        border: 4px outset none !important;
+        
+      }
+      
+      div[scrollx=true] {
+        overflow-x: auto;
+      }
+      
+      div[scrolly=true] {
+        overflow-y: auto;
+      }
